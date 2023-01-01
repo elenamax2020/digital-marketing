@@ -1,0 +1,89 @@
+.header-text {
+    border-radius:1rem;
+    /*  color: rgb(104, 35, 104);
+    background-color: rgba(216, 204, 204, 0.5);  
+    text-shadow: #ff0000;
+    text-decoration-color: #ff0000;*/
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-align: center;
+    text-underline-position: above;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .header {
+    background-color: rgb(128, 128, 128);
+    height: 720px;
+    padding: 10%;
+    text-align: center,center;
+    background-image: url("digital.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #mainNavigation a {
+    font-family: 'Cabin', sans-serif;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+   
+    text-shadow:1px 1px 2px rgba(0,0,0,0.4)
+  }
+   
+  .dropdown-menu {
+    background:#421fd0;
+    opacity: 0.7;
+  }
+  a.dropdown-toggle {
+    color:#fbf8f8 !important
+  }
+  a.dropdown-item:hover {
+    color:#03727d !important
+  }
+  .nav-item a{
+    color:#dfdfdf;
+  }
+  .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(106, 0, 255);
+}
+
+  .nav-item a:hover {
+    color:#fff;
+
+  }
+  .nav-item{
+    min-width:12vw;
+  }
+  #mainNavigation {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:123;
+    padding-bottom:120px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  #navbarNavDropdown.collapsing .navbar-nav,
+  #navbarNavDropdown.show .navbar-nav{
+    background:#037582;
+    opacity: 0.9;
+    padding:12px;
+  }
+  .box{
+    padding: 15px;        
+    border: 4px solid #666;
+    margin-bottom: 20px;
+    size:50px;
+}
+.box {
+    float:left;
+    margin-right: 30px;
+}
