@@ -48,9 +48,12 @@
     color:#dfdfdf;
   }
   .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: rgb(106, 0, 255);
+    color: rgb(87, 213, 245);
 }
-
+.nav-link.active:hover
+{
+  color:rgb(232, 234, 238);
+}
   .nav-item a:hover {
     color:#fff;
 
@@ -80,10 +83,170 @@
   .box{
     padding: 15px;        
     border: 4px solid #666;
-    margin-bottom: 20px;
     size:50px;
 }
 .box {
     float:left;
-    margin-right: 30px;
+}
+/*footer css starts here under*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+footer{
+  width:100%;
+  position: relative;
+  Bottom: 0;
+  background: linear-gradient(to right,#6d82f6, #2d0b00);
+  color: #fff;
+  padding-left: 5em;
+  padding-top: 5em;
+  border-top-left-radius:125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  }
+  /*
+  .col:nth-child(2), .col:nth-child(3){
+      flex-basis: 25%;
+
+  }*/
+
+.logo{
+  width: 100px;
+  margin-bottom: 30px;
+  background-image: url("../img/nika2.png");
+  background-size: cover;
+}
+
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;/*
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;*/
+}
+ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a{
+  text-decoration: none;
+  color: #ccc;
+}
+
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copyright{
+  text-align: center;
+  margin-bottom: 0;
+}
+.underline{
+  width:100%;
+  height:5px;
+  background: #9b9a9a;
+  border-radius: 3px;
+  position: relative;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+  margin-top: -20px;
+}
+.underline span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite
+}
+
+
+@keyframes moving{
+  0%{
+      left: -20px;}
+  100%{
+      left: 100%;
+  }
+}
+@media (max-width: 600px){
+  footer{
+      bottom: unset;
+    }
+  .col{
+      flex-basis: 100%;
+    }
+  /*
+  .col:nth-child(2), .col:nth-child(3){
+          flex-basis: 100%;
+    }*/
+}
+
+form.foot {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+    
+}
+form.foot .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form.foot input{
+    width: 100%;
+    background: transparent;
+    color:#ccc;
+    border: 0;
+    outline: none;
+
+}
+form button{
+    background: transparent;
+    border: 0;
+    color:white;
+    outline: none;
+    cursor: pointer;
+}
+form-button .fas{
+    font-size: 26px;
+    color: #ccc
+}
+.social-icons .fab{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.3em;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
