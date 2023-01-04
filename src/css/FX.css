@@ -1,0 +1,2086 @@
+/* FX.CSS */
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/* normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+    color: #ff9800;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html,
+body {
+    font-family: 'Agency FB', sans-serif;
+    font-size: 2.4vh;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 5.5vh
+}
+
+h2 {
+    font-size: 5vh
+}
+
+h3 {
+    font-size: 4.5vh
+}
+
+h4 {
+    font-size: 3.5vh
+}
+
+h5 {
+    font-size: 2.5vh
+}
+
+h6 {
+    font-size: 2vh
+}
+
+.FX-serif {
+    font-family: serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Agency FB";
+    font-weight: 600;
+    margin: 10px 0
+}
+
+.FX-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.FX-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+.FX-table,
+.FX-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.FX-table-all {
+    border: 1px solid #ccc
+}
+
+.FX-bordered tr,
+.FX-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.FX-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.FX-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.FX-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.FX-hoverable tbody tr:hover,
+.FX-ul.FX-hoverable li:hover {
+    background-color: #ccc
+}
+
+.FX-centered tr th,
+.FX-centered tr td {
+    text-align: center
+}
+
+.FX-table td,
+.FX-table th,
+.FX-table-all td,
+.FX-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.FX-table th:first-child,
+.FX-table td:first-child,
+.FX-table-all th:first-child,
+.FX-table-all td:first-child {
+    padding-left: 16px
+}
+
+.FX-btn,
+.FX-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.FX-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.FX-btn,
+.FX-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.FX-disabled,
+.FX-btn:disabled,
+.FX-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.FX-disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.FX-btn.FX-disabled:hover,
+.FX-btn:disabled:hover {
+    box-shadow: none
+}
+
+.FX-badge,
+.FX-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.FX-badge {
+    border-radius: 50%
+}
+
+.FX-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.FX-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.FX-ul li:last-child {
+    border-bottom: none
+}
+
+.FX-tooltip,
+.FX-display-container {
+    position: relative
+}
+
+.FX-tooltip .FX-text {
+    display: none
+}
+
+.FX-tooltip:hover .FX-text {
+    display: inline-block
+}
+
+.FX-ripple:active {
+    opacity: 0.5
+}
+
+.FX-ripple {
+    transition: opacity 0s
+}
+
+.FX-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.FX-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.FX-dropdown-click,
+.FX-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.FX-dropdown-hover:hover .FX-dropdown-content {
+    display: block
+}
+
+.FX-dropdown-hover:first-child,
+.FX-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.FX-dropdown-hover:hover>.FX-button:first-child,
+.FX-dropdown-click:hover>.FX-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.FX-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.FX-check,
+.FX-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.FX-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+.FX-bar-block .FX-dropdown-hover,
+.FX-bar-block .FX-dropdown-click {
+    width: 100%
+}
+
+.FX-bar-block .FX-dropdown-hover .FX-dropdown-content,
+.FX-bar-block .FX-dropdown-click .FX-dropdown-content {
+    min-width: 100%
+}
+
+.FX-bar-block .FX-dropdown-hover .FX-button,
+.FX-bar-block .FX-dropdown-click .FX-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.FX-main,
+#main {
+    transition: margin-left .4s
+}
+
+.FX-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.FX-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.FX-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.FX-center .FX-bar {
+    display: inline-block;
+    width: auto
+}
+
+.FX-bar .FX-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.FX-bar .FX-dropdown-hover,
+.FX-bar .FX-dropdown-click {
+    position: static;
+    float: left
+}
+
+.FX-bar .FX-button {
+    white-space: normal
+}
+
+.FX-bar-block .FX-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.FX-bar-block.FX-center .FX-bar-item {
+    text-align: center
+}
+
+.FX-block {
+    display: block;
+    width: 100%
+}
+
+.FX-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.FX-container:after,
+.FX-container:before,
+.FX-panel:after,
+.FX-panel:before,
+.FX-row:after,
+.FX-row:before,
+.FX-row-padding:after,
+.FX-row-padding:before,
+.FX-cell-row:before,
+.FX-cell-row:after,
+.FX-clear:after,
+.FX-clear:before,
+.FX-bar:before,
+.FX-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.FX-col,
+.FX-half,
+.FX-third,
+.FX-twothird,
+.FX-threequarter,
+.FX-quarter {
+    float: left;
+    width: 100%
+}
+
+.FX-col.s1 {
+    width: 8.33333%
+}
+
+.FX-col.s2 {
+    width: 16.66666%
+}
+
+.FX-col.s3 {
+    width: 24.99999%
+}
+
+.FX-col.s4 {
+    width: 33.33333%
+}
+
+.FX-col.s5 {
+    width: 41.66666%
+}
+
+.FX-col.s6 {
+    width: 49.99999%
+}
+
+.FX-col.s7 {
+    width: 58.33333%
+}
+
+.FX-col.s8 {
+    width: 66.66666%
+}
+
+.FX-col.s9 {
+    width: 74.99999%
+}
+
+.FX-col.s10 {
+    width: 83.33333%
+}
+
+.FX-col.s11 {
+    width: 91.66666%
+}
+
+.FX-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width:801px) {
+    .FX-col.m1 {
+        width: 8.33333%
+    }
+
+    .FX-col.m2 {
+        width: 16.66666%
+    }
+
+    .FX-col.m3,
+    .FX-quarter {
+        width: 24.99999%
+    }
+
+    .FX-col.m4,
+    .FX-third {
+        width: 33.33333%
+    }
+
+    .FX-col.m5 {
+        width: 41.66666%
+    }
+
+    .FX-col.m6,
+    .FX-half {
+        width: 49.99999%
+    }
+
+    .FX-col.m7 {
+        width: 58.33333%
+    }
+
+    .FX-col.m8,
+    .FX-twothird {
+        width: 66.66666%
+    }
+
+    .FX-col.m9,
+    .FX-threequarter {
+        width: 74.99999%
+    }
+
+    .FX-col.m10 {
+        width: 83.33333%
+    }
+
+    .FX-col.m11 {
+        width: 91.66666%
+    }
+
+    .FX-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .FX-col.l1 {
+        width: 8.33333%
+    }
+
+    .FX-col.l2 {
+        width: 16.66666%
+    }
+
+    .FX-col.l3 {
+        width: 24.99999%
+    }
+
+    .FX-col.l4 {
+        width: 33.33333%
+    }
+
+    .FX-col.l5 {
+        width: 41.66666%
+    }
+
+    .FX-col.l6 {
+        width: 49.99999%
+    }
+
+    .FX-col.l7 {
+        width: 58.33333%
+    }
+
+    .FX-col.l8 {
+        width: 66.66666%
+    }
+
+    .FX-col.l9 {
+        width: 74.99999%
+    }
+
+    .FX-col.l10 {
+        width: 83.33333%
+    }
+
+    .FX-col.l11 {
+        width: 91.66666%
+    }
+
+    .FX-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.FX-rest {
+    overflow: hidden
+}
+
+.FX-stretch {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+.FX-content,
+.FX-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.FX-content {
+    max-width: 980px
+}
+
+.FX-auto {
+    max-width: 1140px
+}
+
+.FX-cell-row {
+    display: table;
+    width: 100%
+}
+
+.FX-cell {
+    display: table-cell
+}
+
+.FX-cell-top {
+    vertical-align: top
+}
+
+.FX-cell-middle {
+    vertical-align: middle
+}
+
+.FX-cell-bottom {
+    vertical-align: bottom
+}
+
+.FX-hide {
+    display: none !important
+}
+
+.FX-show-block,
+.FX-show {
+    display: block !important
+}
+
+.FX-show-inline-block {
+    display: inline-block !important
+}
+
+@media (max-width:1205px) {
+    .FX-auto {
+        max-width: 95%
+    }
+}
+
+@media (max-width:800px) {
+    .FX-modal-content {
+        margin: 0 10px;
+        width: auto !important
+    }
+
+    .FX-modal {
+        padding-top: 30px
+    }
+
+    .FX-dropdown-hover.FX-mobile .FX-dropdown-content,
+    .FX-dropdown-click.FX-mobile .FX-dropdown-content {
+        position: relative
+    }
+
+    .FX-hide-small {
+        display: none !important
+    }
+
+    .FX-mobile {
+        display: block;
+        width: 100% !important
+    }
+
+    .FX-bar-item.FX-mobile,
+    .FX-dropdown-hover.FX-mobile,
+    .FX-dropdown-click.FX-mobile {
+        text-align: center
+    }
+
+    .FX-dropdown-hover.FX-mobile,
+    .FX-dropdown-hover.FX-mobile .FX-btn,
+    .FX-dropdown-hover.FX-mobile .FX-button,
+    .FX-dropdown-click.FX-mobile,
+    .FX-dropdown-click.FX-mobile .FX-btn,
+    .FX-dropdown-click.FX-mobile .FX-button {
+        width: 100%
+    }
+}
+
+@media (max-width:801px) {
+    .FX-modal-content {
+        width: 500px
+    }
+
+    .FX-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width:993px) {
+    .FX-modal-content {
+        width: 900px
+    }
+
+    .FX-hide-large {
+        display: none !important
+    }
+
+    .FX-sidebar.FX-collapse {
+        display: block !important
+    }
+}
+
+@media (max-width:992px) and (min-width:801px) {
+    .FX-hide-medium {
+        display: none !important
+    }
+}
+
+@media (max-width:992px) {
+    .FX-sidebar.FX-collapse {
+        display: none
+    }
+
+    .FX-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .FX-auto {
+        max-width: 100%
+    }
+}
+
+.FX-top,
+.FX-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.FX-top {
+    top: 0
+}
+
+.FX-bottom {
+    bottom: 0
+}
+
+.FX-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.FX-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.FX-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.FX-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.FX-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.FX-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.FX-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.FX-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.FX-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.FX-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.FX-display-container:hover .FX-display-hover {
+    display: block
+}
+
+.FX-display-container:hover span.FX-display-hover {
+    display: inline-block
+}
+
+.FX-display-hover {
+    display: none
+}
+
+.FX-display-position {
+    position: absolute
+}
+
+.FX-circle {
+    border-radius: 50%
+}
+
+.FX-round-small {
+    border-radius: 2px
+}
+
+.FX-round,
+.FX-round-medium {
+    border-radius: 4px
+}
+
+.FX-round-large {
+    border-radius: 8px
+}
+
+.FX-round-xlarge {
+    border-radius: 16px
+}
+
+.FX-round-xxlarge {
+    border-radius: 32px
+}
+
+.FX-row-padding,
+.FX-row-padding>.FX-half,
+.FX-row-padding>.FX-third,
+.FX-row-padding>.FX-twothird,
+.FX-row-padding>.FX-threequarter,
+.FX-row-padding>.FX-quarter,
+.FX-row-padding>.FX-col {
+    padding: 0 8px
+}
+
+.FX-container,
+.FX-panel {
+    padding: 0.01em 16px
+}
+
+.FX-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.FX-code,
+.FX-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.FX-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.FX-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.FX-card,
+.FX-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.FX-card-4,
+.FX-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.FX-spin {
+    animation: FX-spin 2s infinite linear
+}
+
+@keyframes FX-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.FX-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.FX-animate-opacity {
+    animation: opac 0.3s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.FX-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.FX-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.FX-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.FX-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.FX-animate-zoom {
+    animation: animatezoom 0.1s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.FX-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.FX-animate-input:focus {
+    width: 100% !important
+}
+
+.FX-opacity,
+.FX-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.FX-opacity-off,
+.FX-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.FX-opacity-max {
+    opacity: 0.25
+}
+
+.FX-opacity-min {
+    opacity: 0.75
+}
+
+.FX-greyscale-max,
+.FX-grayscale-max,
+.FX-hover-greyscale:hover,
+.FX-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.FX-greyscale,
+.FX-grayscale {
+    filter: grayscale(75%)
+}
+
+.FX-greyscale-min,
+.FX-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.FX-sepia {
+    filter: sepia(75%)
+}
+
+.FX-sepia-max,
+.FX-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.FX-sepia-min {
+    filter: sepia(50%)
+}
+
+.FX-tiny {
+    font-size: 10px !important
+}
+
+.FX-small {
+    font-size: 12px !important
+}
+
+.FX-medium {
+    font-size: 15px !important
+}
+
+.FX-large {
+    font-size: 3vh !important
+}
+
+.FX-xlarge {
+    font-size: 5vh !important
+}
+
+.FX-xxlarge {
+    font-size: 36px !important
+}
+
+.FX-xxxlarge {
+    font-size: 48px !important
+}
+
+.FX-jumbo {
+    font-size: 10vh !important
+}
+
+.FX-left-align {
+    text-align: left !important
+}
+
+.FX-right-align {
+    text-align: right !important
+}
+
+.FX-justify {
+    text-align: justify !important
+}
+
+.FX-center {
+    text-align: center !important
+}
+
+.FX-border-0 {
+    border: 0 !important
+}
+
+.FX-border {
+    border: 1px solid #ccc !important
+}
+
+.FX-border-top {
+    border-top: 1px solid #ccc !important
+}
+
+.FX-border-bottom {
+    border-bottom: 1px solid #ccc !important
+}
+
+.FX-border-left {
+    border-left: 1px solid #ccc !important
+}
+
+.FX-border-right {
+    border-right: 1px solid #ccc !important
+}
+
+.FX-topbar {
+    border-top: 6px solid #ccc !important
+}
+
+.FX-bottombar {
+    border-bottom: 6px solid #ccc !important
+}
+
+.FX-leftbar {
+    border-left: 6px solid #ccc !important
+}
+
+.FX-rightbar {
+    border-right: 6px solid #ccc !important
+}
+
+.FX-section,
+.FX-code {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.FX-margin {
+    margin: 16px !important
+}
+
+.FX-margin-top {
+    margin-top: 16px !important
+}
+
+.FX-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.FX-margin-left {
+    margin-left: 16px !important
+}
+
+.FX-margin-right {
+    margin-right: 16px !important
+}
+
+.FX-padding-small {
+    padding: 4px 8px !important
+}
+
+.FX-padding {
+    padding: 8px 16px !important
+}
+
+.FX-padding-large {
+    padding: 12px 24px !important
+}
+
+.FX-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.FX-padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
+}
+
+.FX-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+.FX-padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important
+}
+
+.FX-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+}
+
+.FX-left {
+    float: left !important
+}
+
+.FX-right {
+    float: right !important
+}
+
+.FX-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.FX-transparent,
+.FX-hover-none:hover {
+    background-color: transparent !important
+}
+
+.FX-hover-none:hover {
+    box-shadow: none !important
+}
+
+/* Colors */
+.FX-amber,
+.FX-hover-amber:hover {
+    color: #000 !important;
+    background-color: #ffc107 !important
+}
+
+.FX-aqua,
+.FX-hover-aqua:hover {
+    color: #000 !important;
+    background-color: #00ffff !important
+}
+
+.FX-blue,
+.FX-hover-blue:hover {
+    color: #fff !important;
+    background-color: #2196F3 !important
+}
+
+.FX-light-blue,
+.FX-hover-light-blue:hover {
+    color: #000 !important;
+    background-color: #87CEEB !important
+}
+
+.FX-brown,
+.FX-hover-brown:hover {
+    color: #fff !important;
+    background-color: #795548 !important
+}
+
+.FX-cyan,
+.FX-hover-cyan:hover {
+    color: #000 !important;
+    background-color: #00bcd4 !important
+}
+
+.FX-blue-grey,
+.FX-hover-blue-grey:hover,
+.FX-blue-gray,
+.FX-hover-blue-gray:hover {
+    color: #fff !important;
+    background-color: #607d8b !important
+}
+
+.FX-green,
+.FX-hover-green:hover {
+    color: #fff !important;
+    background-color: #4CAF50 !important
+}
+
+.FX-light-green,
+.FX-hover-light-green:hover {
+    color: #000 !important;
+    background-color: #8bc34a !important
+}
+
+.FX-indigo,
+.FX-hover-indigo:hover {
+    color: #fff !important;
+    background-color: #3f51b5 !important
+}
+
+.FX-khaki,
+.FX-hover-khaki:hover {
+    color: #000 !important;
+    background-color: #f0e68c !important
+}
+
+.FX-lime,
+.FX-hover-lime:hover {
+    color: #000 !important;
+    background-color: #cddc39 !important
+}
+
+.FX-orange,
+.FX-hover-orange:hover {
+    color: #000 !important;
+    background-color: #ff9800 !important
+}
+
+.FX-deep-orange,
+.FX-hover-deep-orange:hover {
+    color: #fff !important;
+    background-color: #ff5722 !important
+}
+
+.FX-pink,
+.FX-hover-pink:hover {
+    color: #fff !important;
+    background-color: #e91e63 !important
+}
+
+.FX-purple,
+.FX-hover-purple:hover {
+    color: #fff !important;
+    background-color: #9c27b0 !important
+}
+
+.FX-deep-purple,
+.FX-hover-deep-purple:hover {
+    color: #fff !important;
+    background-color: #673ab7 !important
+}
+
+.FX-red,
+.FX-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+}
+
+.FX-sand,
+.FX-hover-sand:hover {
+    color: #000 !important;
+    background-color: #fdf5e6 !important
+}
+
+.FX-teal,
+.FX-hover-teal:hover {
+    color: #fff !important;
+    background-color: #009688 !important
+}
+
+.FX-yellow,
+.FX-hover-yellow:hover {
+    color: #000 !important;
+    background-color: #ffeb3b !important
+}
+
+.FX-white,
+.FX-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.FX-black,
+.FX-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.FX-grey,
+.FX-hover-grey:hover,
+.FX-gray,
+.FX-hover-gray:hover {
+    color: #000 !important;
+    background-color: #9e9e9e !important
+}
+
+.FX-light-grey,
+.FX-hover-light-grey:hover,
+.FX-light-gray,
+.FX-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+
+.FX-dark-grey,
+.FX-hover-dark-grey:hover,
+.FX-dark-gray,
+.FX-hover-dark-gray:hover {
+    color: #fff !important;
+    background-color: #616161 !important
+}
+
+.FX-pale-red,
+.FX-hover-pale-red:hover {
+    color: #000 !important;
+    background-color: #ffdddd !important
+}
+
+.FX-pale-green,
+.FX-hover-pale-green:hover {
+    color: #000 !important;
+    background-color: #ddffdd !important
+}
+
+.FX-pale-yellow,
+.FX-hover-pale-yellow:hover {
+    color: #000 !important;
+    background-color: #ffffcc !important
+}
+
+.FX-pale-blue,
+.FX-hover-pale-blue:hover {
+    color: #000 !important;
+    background-color: #ddffff !important
+}
+
+.FX-text-amber,
+.FX-hover-text-amber:hover {
+    color: #ffc107 !important
+}
+
+.FX-text-aqua,
+.FX-hover-text-aqua:hover {
+    color: #00ffff !important
+}
+
+.FX-text-blue,
+.FX-hover-text-blue:hover {
+    color: #2196F3 !important
+}
+
+.FX-text-light-blue,
+.FX-hover-text-light-blue:hover {
+    color: #87CEEB !important
+}
+
+.FX-text-brown,
+.FX-hover-text-brown:hover {
+    color: #795548 !important
+}
+
+.FX-text-cyan,
+.FX-hover-text-cyan:hover {
+    color: #00bcd4 !important
+}
+
+.FX-text-blue-grey,
+.FX-hover-text-blue-grey:hover,
+.FX-text-blue-gray,
+.FX-hover-text-blue-gray:hover {
+    color: #607d8b !important
+}
+
+.FX-text-green,
+.FX-hover-text-green:hover {
+    color: #4CAF50 !important
+}
+
+.FX-text-light-green,
+.FX-hover-text-light-green:hover {
+    color: #8bc34a !important
+}
+
+.FX-text-indigo,
+.FX-hover-text-indigo:hover {
+    color: #3f51b5 !important
+}
+
+.FX-text-khaki,
+.FX-hover-text-khaki:hover {
+    color: #b4aa50 !important
+}
+
+.FX-text-lime,
+.FX-hover-text-lime:hover {
+    color: #cddc39 !important
+}
+
+.FX-text-orange,
+.FX-hover-text-orange:hover {
+    color: #ff9800 !important
+}
+
+.FX-text-deep-orange,
+.FX-hover-text-deep-orange:hover {
+    color: #ff5722 !important
+}
+
+.FX-text-pink,
+.FX-hover-text-pink:hover {
+    color: #e91e63 !important
+}
+
+.FX-text-purple,
+.FX-hover-text-purple:hover {
+    color: #9c27b0 !important
+}
+
+.FX-text-deep-purple,
+.FX-hover-text-deep-purple:hover {
+    color: #673ab7 !important
+}
+
+.FX-text-red,
+.FX-hover-text-red:hover {
+    color: #f44336 !important
+}
+
+.FX-text-sand,
+.FX-hover-text-sand:hover {
+    color: #fdf5e6 !important
+}
+
+.FX-text-teal,
+.FX-hover-text-teal:hover {
+    color: #009688 !important
+}
+
+.FX-text-yellow,
+.FX-hover-text-yellow:hover {
+    color: #d2be0e !important
+}
+
+.FX-text-white,
+.FX-hover-text-white:hover {
+    color: #fff !important
+}
+
+.FX-text-black,
+.FX-hover-text-black:hover {
+    color: #000 !important
+}
+
+.FX-text-grey,
+.FX-hover-text-grey:hover,
+.FX-text-gray,
+.FX-hover-text-gray:hover {
+    color: #757575 !important
+}
+
+.FX-text-light-grey,
+.FX-hover-text-light-grey:hover,
+.FX-text-light-gray,
+.FX-hover-text-light-gray:hover {
+    color: #f1f1f1 !important
+}
+
+.FX-text-dark-grey,
+.FX-hover-text-dark-grey:hover,
+.FX-text-dark-gray,
+.FX-hover-text-dark-gray:hover {
+    color: #3a3a3a !important
+}
+
+.FX-border-amber,
+.FX-hover-border-amber:hover {
+    border-color: #ffc107 !important
+}
+
+.FX-border-aqua,
+.FX-hover-border-aqua:hover {
+    border-color: #00ffff !important
+}
+
+.FX-border-blue,
+.FX-hover-border-blue:hover {
+    border-color: #2196F3 !important
+}
+
+.FX-border-light-blue,
+.FX-hover-border-light-blue:hover {
+    border-color: #87CEEB !important
+}
+
+.FX-border-brown,
+.FX-hover-border-brown:hover {
+    border-color: #795548 !important
+}
+
+.FX-border-cyan,
+.FX-hover-border-cyan:hover {
+    border-color: #00bcd4 !important
+}
+
+.FX-border-blue-grey,
+.FX-hover-border-blue-grey:hover,
+.FX-border-blue-gray,
+.FX-hover-border-blue-gray:hover {
+    border-color: #607d8b !important
+}
+
+.FX-border-green,
+.FX-hover-border-green:hover {
+    border-color: #4CAF50 !important
+}
+
+.FX-border-light-green,
+.FX-hover-border-light-green:hover {
+    border-color: #8bc34a !important
+}
+
+.FX-border-indigo,
+.FX-hover-border-indigo:hover {
+    border-color: #3f51b5 !important
+}
+
+.FX-border-khaki,
+.FX-hover-border-khaki:hover {
+    border-color: #f0e68c !important
+}
+
+.FX-border-lime,
+.FX-hover-border-lime:hover {
+    border-color: #cddc39 !important
+}
+
+.FX-border-orange,
+.FX-hover-border-orange:hover {
+    border-color: #ff9800 !important
+}
+
+.FX-border-deep-orange,
+.FX-hover-border-deep-orange:hover {
+    border-color: #ff5722 !important
+}
+
+.FX-border-pink,
+.FX-hover-border-pink:hover {
+    border-color: #e91e63 !important
+}
+
+.FX-border-purple,
+.FX-hover-border-purple:hover {
+    border-color: #9c27b0 !important
+}
+
+.FX-border-deep-purple,
+.FX-hover-border-deep-purple:hover {
+    border-color: #673ab7 !important
+}
+
+.FX-border-red,
+.FX-hover-border-red:hover {
+    border-color: #f44336 !important
+}
+
+.FX-border-sand,
+.FX-hover-border-sand:hover {
+    border-color: #fdf5e6 !important
+}
+
+.FX-border-teal,
+.FX-hover-border-teal:hover {
+    border-color: #009688 !important
+}
+
+.FX-border-yellow,
+.FX-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+}
+
+.FX-border-white,
+.FX-hover-border-white:hover {
+    border-color: #fff !important
+}
+
+.FX-border-black,
+.FX-hover-border-black:hover {
+    border-color: #000 !important
+}
+
+.FX-border-grey,
+.FX-hover-border-grey:hover,
+.FX-border-gray,
+.FX-hover-border-gray:hover {
+    border-color: #9e9e9e !important
+}
+
+.FX-border-light-grey,
+.FX-hover-border-light-grey:hover,
+.FX-border-light-gray,
+.FX-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important
+}
+
+.FX-border-dark-grey,
+.FX-hover-border-dark-grey:hover,
+.FX-border-dark-gray,
+.FX-hover-border-dark-gray:hover {
+    border-color: #616161 !important
+}
+
+.FX-border-pale-red,
+.FX-hover-border-pale-red:hover {
+    border-color: #ffe7e7 !important
+}
+
+.FX-border-pale-green,
+.FX-hover-border-pale-green:hover {
+    border-color: #e7ffe7 !important
+}
+
+.FX-border-pale-yellow,
+.FX-hover-border-pale-yellow:hover {
+    border-color: #ffffcc !important
+}
+
+.FX-border-pale-blue,
+.FX-hover-border-pale-blue:hover {
+    border-color: #e7ffff !important
+}
+
+/*FX predefined colors*/
+.FX-silver,
+.FX-hover-silver:hover {
+    color: silver !important
+}
+
+.FX-text-silver,
+.FX-hover-text-silver:hover {
+    color: silver !important
+}
+
+.FX-border-silver,
+.FX-hover-border-silver:hover {
+    border-color: silver !important
+}
+
+/* FX Image Filter styles*/
+.FX-saturate {
+    filter: saturate(3);
+}
+
+.FX-grayscale {
+    filter: grayscale(100%);
+}
+
+.FX-contrast {
+    filter: contrast(160%);
+}
+
+.FX-brightness {
+    filter: brightness(0.25);
+}
+
+.FX-blur {
+    filter: blur(3px);
+}
+
+.FX-invert {
+    filter: invert(100%);
+}
+
+.FX-sepia {
+    filter: sepia(100%);
+}
+
+.FX-huerotate {
+    filter: hue-rotate(180deg);
+}
+
+.FX-rss.opacity {
+    filter: opacity(50%);
+}
+
+/*FX Image hover Filter effects*/
+.FX-hover-saturate:hover {
+    -moz-filter: saturate(3);
+    -o-filter: saturate(3);
+    -webkit-filter: saturate(3);
+    filter: saturate(3);
+}
+
+.FX-hover-grayscale:hover {
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.FX-hover-contrast:hover {
+    -moz-filter: contrast(160%);
+    -o-filter: contrast(160%);
+    -webkit-filter: contrast(160%);
+    filter: contrast(160%);
+}
+
+.FX-hover-brightness:hover {
+    -moz-filter: brightness(0.25);
+    -o-filter: brightness(0.25);
+    -webkit-filter: brightness(0.25);
+    filter: brightness(0.25);
+}
+
+.FX-hover-blur:hover {
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.FX-hover-invert:hover {
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.FX-hover-sepia:hover {
+    -moz-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
+.FX-hover-huerotate:hover {
+    -moz-filter: hue-rotate(180deg);
+    -o-filter: hue-rotate(180deg);
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+}
+
+.FX-hover-rss.opacity:hover {
+    -moz-filter: opacity(50%);
+    -o-filter: opacity(50%);
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
+}

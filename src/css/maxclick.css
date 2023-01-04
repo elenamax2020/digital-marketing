@@ -19,7 +19,40 @@
     height: 720px;
     padding: 10%;
     text-align: center,center;
-    background-image: url("digital.jpg");
+    background-image: url("../img/digital.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .header1 {
+    background-color: rgb(128, 128, 128);
+    height: 720px;
+    padding: 10%;
+    text-align: center,center;
+    background-image: url("../img/digital.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .header2 {
+    background-color: rgb(128, 128, 128);
+    height: 720px;
+    padding: 10%;
+    text-align: center,center;
+    background-image: url("../img/about-img.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .header3 {
+    background-color: rgb(128, 128, 128);
+    height: 720px;
+    padding: 10%;
+    text-align: center,center;
+    background-image: url("../img/page3img.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
@@ -69,9 +102,9 @@
     z-index:123;
     padding-bottom:120px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 30%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
   }
   #navbarNavDropdown.collapsing .navbar-nav,
@@ -136,7 +169,7 @@ footer{
 }
 
 
-.col h3{
+.col h3, h5, h2 {
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
@@ -147,7 +180,7 @@ footer{
   margin: 20px 0;*/
 }
 ul li{
-  list-style: none;
+  list-style:circle;
   margin-bottom: 12px;
 }
 ul li a{
@@ -251,12 +284,34 @@ form-button .fas{
     margin-bottom: 20px;
 }
 
-.header1 {
+.header4 {
   background-color: rgb(128, 128, 128);
   height: 720px;
   padding: 10%;
   text-align: center,center;
-  background-image: url("marketing2.jpg");
+  background-image: url("../img/page3img2.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header5 {
+  background-color: rgb(128, 128, 128);
+  height: 720px;
+  padding: 10%;
+  text-align: center,center;
+  background-image: url("../img/benefits-img.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header6 {
+  background-color: rgb(128, 128, 128);
+  height: 720px;
+  padding: 10%;
+  text-align: center,center;
+  background-image: url("../img/benefits-img2.jpg");
   background-repeat: no-repeat, repeat;
   background-size: cover;
   background-position: center;
