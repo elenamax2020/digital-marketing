@@ -250,3 +250,42 @@ form-button .fas{
     cursor: pointer;
     margin-bottom: 20px;
 }
+
+.plabel {
+  height: 40px; 
+  width: fit-content; 
+  text-align:right; 
+  font-size: 1em;
+}
+
+.plabeler {
+  align-items:center;
+  height: 40px;
+}
+
+.pgbarer
+{
+margin-left:-1em;
+height:40px;
+}
+
+.pgbar {
+  height: 40px;
+} 
+
+@media (max-width: 770px) {
+  .plabeler {
+    max-width:90%;
+    height: 80px;
+  }
+  .plabel {
+    text-align: left;
+    height: 80px;
+  }
+  .pgbar{
+    height: 80px;
+  }
+  .pgbarer{
+    height: 80px;
+  }
+}
