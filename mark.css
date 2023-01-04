@@ -1,4 +1,4 @@
-.header-text {
+.header-text, .header1 {
     border-radius:1rem;
     /*  color: rgb(104, 35, 104);
     background-color: rgba(216, 204, 204, 0.5);  
@@ -251,6 +251,18 @@ form-button .fas{
     margin-bottom: 20px;
 }
 
+.header1 {
+  background-color: rgb(128, 128, 128);
+  height: 720px;
+  padding: 10%;
+  text-align: center,center;
+  background-image: url("marketing2.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .plabel {
   height: 40px; 
   width: fit-content; 
@@ -276,16 +288,17 @@ height:40px;
 @media (max-width: 770px) {
   .plabeler {
     max-width:90%;
-    height: 80px;
+    height: 40px;
   }
   .plabel {
     text-align: left;
-    height: 80px;
+    height: 40px;
   }
   .pgbar{
-    height: 80px;
+    height: 40px;
   }
   .pgbarer{
-    height: 80px;
+    height: 40px;
   }
 }
+
