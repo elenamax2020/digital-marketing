@@ -162,7 +162,7 @@ footer{
   }*/
 
 .logof{
-  width: 100px;
+  width: 150px;
   margin-bottom: 30px;
   /*background-image: url("../img/nika2.png");*/
   background-size: cover;
@@ -284,6 +284,11 @@ form-button .fas{
     margin-bottom: 20px;
 }
 
+#socialh {
+  position: absolute;
+  right: 0;
+}
+
 .header4 {
   background-color: rgb(128, 128, 128);
   height: 720px;
@@ -367,4 +372,7 @@ height:40px;
   min-width: 200px;
   width: 200px;
   filter: drop-shadow(1px 1px 1px #e6ff8d);
+}
+.logo:hover {
+  filter: drop-shadow(1px 1px 22px #e6ff8d);
 }
