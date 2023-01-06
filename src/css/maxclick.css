@@ -285,14 +285,16 @@ form-button .fas{
 
 .plabel {
   height: 40px; 
-  width: fit-content; 
-  text-align:right; 
-  font-size: 1em;
+  width: fit-content;
+  font-size:1em;
+  float: right;
+  text-align: right;
 }
 
 .plabeler {
-  align-items:center;
+  align-items:right;
   height: 40px;
+  display: block;
 }
 
 .pgbarer
@@ -306,18 +308,22 @@ height:40px;
 } 
 
 @media (max-width: 770px) {
+  .plabel {
+    text-align: right;
+    height: 40px;
+    font-size:x-small;
+  }
+  
   .plabeler {
     max-width:90%;
     height: 40px;
   }
-  .plabel {
-    text-align: left;
-    height: 40px;
-  }
-  .pgbar{
-    height: 40px;
-  }
+  
   .pgbarer{
+    height: 40px;
+  }
+
+  .pgbar{
     height: 40px;
   }
 }
@@ -375,4 +381,12 @@ input[type=submit]:hover {
 }
 .tc2 {
   background-color: rgb(219, 6, 0);
+}
+.tc3 {
+  background-color: #021e77;
+}
+
+.myimg {
+  width: 100%;
+  height: fit-content;
 }
