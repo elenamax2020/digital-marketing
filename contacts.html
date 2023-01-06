@@ -4,21 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="src/css/FX.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/3fe4538a56.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/maxclick.css">
+    <link rel="stylesheet" href="src/css/FX.css">
 </head>
 
 <body onload="load()">
-    <div class="header header-bg3">
+    <div class="header header-bg7">
         <!--header heading-->
-        <h3 class="header-text h1 FX-codespan" style="margin-top: 150px;">Max Click Lingo Services
+        <h3 class="header-text" style="margin-top: 150px;">Max Click Digital Marketing Services
             for your business </h3>
         <!--header text-->
         <p class="header-text display-4">MAX GROUP</p>
-    </div>
+
     </div>
 
     <!--Welcome Note-->
@@ -29,18 +29,19 @@
             <nav role="navigation">
                 <div class="row">
                     <div class="col">
-                        <div id="contacth" class="social-icons text-light pt-4 ps-3">
-                            <i class="fa fa-phone"></i>
-                            <i class="fa fa-envelope"></i>
-                            <i class="fa fa-whatsapp"></i>
-                        </div>
                         <a href="https://mgc.global/">
                             <img src="src/img/Asset-2-2.webp" class="logo">
                         </a>                    
-                        <div id="socialh" class="social-icons text-light pt-4 align-content-center">
-
+                        <div id="socialh" class="social-icons text-light pt-3 align-content-center">
+                            <a class="mine-call" href="tel:+79219309677">
+                                <p>
+                                    <i class="fa fa-phone color-white"> </i>
+                                    +79215907612
+                                </p>
+                            </a>
                             <i class="fab fa-facebook-f"></i>
                             <i class="fab fa-twitter"></i>
+                            <i class="fab fa-whatsapp"></i>
                             <i class="fab fa-pinterest"></i>
                         </div>
                     </div>
@@ -56,79 +57,94 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
                     </button>
+
+
                 </div>
                 <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto ">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="lingo.html">About Us</a>
+                            <a class="nav-link" href="about.html">About us</a>
                         </li>
 
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                               Services
+                                Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="lingo.html">Lingo</a></li>
-                                <li><a class="dropdown-item" href="benefits.html">Key Advantages</a></li>
+                                <li><a class="dropdown-item" href="benefits.html">Key Benefits</a></li>
                                 <li><a class="dropdown-item" href="#">Media</a></li>
                             </ul>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Price
-                                Policy
-                            </a>
+                            <a class="nav-link" href="#">Get a Quote</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
+                            <a class="nav-link active" href="contacts.html">Contacts</a>
                         </li>
                         </li>
-                    </ul>
+                    </ul>      
                 </div>
             </div>
         </div>
 
+        <h3>CONTACT US USING FORM BELOW</h3>
 
-        <div class="container-fluid">
-
-            <h5>Digital Marketing Lingo: the only way towards of Social Media Intelligence
-                Consumer-generated content is nowadays a benchmark for Internet users and has become an essential source
-                of consultation before a purchase. 65% of people on the Internet consult “user-generated content” before
-                each purchase on the web Internet conversations about brands have become common on Social Media and
-                Digital Marketing translation services become much more than just a necessity in this context.
-                In this new world’s linguistic activity, our company takes to heart this huge source of trends, ideas
-                and content. We provide digital marketing translation services for semantic audits (uses, expectations
-                and insights in regard to services, products and places) based on the usual conversations of Internet
-                users, providing real strategic value of it.
-            </h5>
-
-
+        <div class="container">
+          <form action="#">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name Here..">
+            <label for="cname">Company Name</label>
+            <input type="text" id="cname" name="companyname" placeholder="Your company name..">
+        <!--    
+            <label for="slanguage">*</label>
+            <input type="text" id="slanguage" name="slanguage" placeholder="The source language is..">
+            <label for="tlanguage">Target Language</label>
+            <input type="text" id="tlanguage" name="tlanguage" placeholder="The target language is..">
+        -->
+            <label for="email">E-Mail*</label>
+            <input type="text" id="email" name="Email" placeholder="Your Email Address Here..">
+    
+            <label for="country">Our Client Service Country</label>
+            <select id="country" name="country">
+    
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="usa">Russia</option>
+              <option value="australia">England</option>
+            </select>
+    
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
+    
+        </textarea>
+            <label for="NotesandInstractions">Notes and Instractions (deadline)</label>
+            <select id="NotesandInstractions" name="Notes and Instractions">
+            <input type="submit" value="Submit">
+    
+          </form>
+          <br>
         </div>
-
-
-        <div class="header4 mt-5">
-            <!--last image on the page-->
-            <h3 class="header1-text" style="margin-top: 150px;">Max Click Digital Marketing Services
-                for your business </h3>
-            <!--last image on the page text-->
-            <p class="header1-text display-4 mt-5">MAX GROUP</p>
-
-        </div>
-        <br><br><br>
-        <h5>Boost your sales with Digital Marketing Lingo. 
-            With the help of integrated Internet marketing, we implement effective solutions to achieve maximum image and financial results for Clients in USA and Europe, in CIS countries, and in Russia.
-            When forming our solutions, we take into account the business tasks set for us, the state and prospects for the development of sites, the latest technological developments in search engine algorithms and Internet marketing development trends.
-            We translate texts extracted from social networks for the creation of a model of conversations necessary for targeting strategies, or for building predictive models. Such texts can be created by retrieving or translating the words of a category, which contain both positive and negative options, comparative opinions, scenarios in use and customer real needs and expectations.
-            This expertise provides strategic value to advertisers, gets the trust of the customers, identifies consumer preferences, and translates market insights towards your products. In intelligent data, what matters is not the quantity, but its representativeness and interpretation, a characteristic connected to their faithful translation. Social Media Intelligence projects itself beyond its own brand or service, analyzing data according to sectoral targets.
-            </h5>
-</body>
+    </div>
+    
+      </div>
+    
+     
+    
+      <!--Java scripts to make navbar sticky below header-->
+      <script type="text/javascript" src="js/counter.js"></script>
+     
+      
+    </body>
+    
 <footer>
     <div class="row">
 
         <div class="col">
-            <img src="src/img/Asset-2-2.webp" class="logo">
+            <img src="src/img/Asset-2-2.webp" class="logof">
             <p>Digital Marketing <br>
                 Interpreting<br>
                 Website Localization <br>

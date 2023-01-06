@@ -19,44 +19,32 @@
     height: 720px;
     padding: 10%;
     text-align: center,center;
-    background-image: url("../img/digital.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
-  .header1 {
-    background-color: rgb(128, 128, 128);
-    height: 720px;
-    padding: 10%;
-    text-align: center,center;
+  .header-bg1 {
     background-image: url("../img/digital.jpg");
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
   }
-  .header2 {
-    background-color: rgb(128, 128, 128);
-    height: 720px;
-    padding: 10%;
-    text-align: center,center;
+  .header-bg2 {
     background-image: url("../img/about-img.jpg");
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
   }
-  .header3 {
-    background-color: rgb(128, 128, 128);
-    height: 720px;
-    padding: 10%;
-    text-align: center,center;
+  .header-bg3 {
     background-image: url("../img/page3img.jpg");
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  }
+
+  .header-bg4 {
+    background-image: url("../img/page3img2.jpg");
+  }
+  .header-bg5 {
+    background-image: url("../img/benefits-img.jpg");
+  }
+  .header-bg6 {
+    background-image: url("../img/benefits-img2.jpg");
+  }
+  .header-bg7 {
+    background-image: url("../img/marketing2.png");
   }
   #mainNavigation a {
     font-family: 'Cabin', sans-serif;
@@ -81,7 +69,7 @@
     color:#dfdfdf;
   }
   .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: rgb(87, 213, 245);
+    color: rgb(123, 218, 255);
 }
 .nav-link.active:hover
 {
@@ -102,9 +90,9 @@
     z-index:123;
     padding-bottom:120px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(0,0,0,1) 30%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top,  rgb(52, 196, 254) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgb(52, 196, 254) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgb(52, 196, 254) 30%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
   }
   #navbarNavDropdown.collapsing .navbar-nav,
@@ -130,20 +118,18 @@
   box-sizing: border-box;
 }
 
-
-
 footer{
   width:100%;
   position: relative;
   Bottom: 0;
-  background: linear-gradient(to right,#6d82f6, #2d0b00);
+  background: linear-gradient(to right,rgb(100, 207, 249), #2d0b00);
   color: #fff;
   padding-left: 5em;
   padding-top: 5em;
   border-top-left-radius:125px;
   font-size: 13px;
   line-height: 20px;
-}
+}  
 .row{
   width: 100%;
   margin: auto;
@@ -273,7 +259,7 @@ form-button .fas{
     font-size: 26px;
     color: #ccc
 }
-.social-icons .fab{
+.social-icons .fab, .fa{
     width: 40px;
     height:40px;
     border-radius: 50%;
@@ -282,17 +268,7 @@ form-button .fas{
     font-size: 1em;
     cursor: pointer;
     margin-bottom: 20px;
-}
-
-.social-icons .fa{
-  width: 40px;
-  height:40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 2.3em;
-  font-size: 1em;
-  cursor: pointer;
-  margin-bottom: 20px;
+    border-top-left-radius: 0;
 }
 
 #socialh {
@@ -305,40 +281,6 @@ form-button .fas{
   position: absolute;
   left:0;
   top: 0;
-}
-
-.header4 {
-  background-color: rgb(128, 128, 128);
-  height: 720px;
-  padding: 10%;
-  text-align: center,center;
-  background-image: url("../img/page3img2.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-.header5 {
-  background-color: rgb(128, 128, 128);
-  height: 720px;
-  padding: 10%;
-  text-align: center,center;
-  background-image: url("../img/benefits-img.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-.header6 {
-  background-color: rgb(128, 128, 128);
-  height: 720px;
-  padding: 10%;
-  text-align: center,center;
-  background-image: url("../img/benefits-img2.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .plabel {
@@ -393,4 +335,44 @@ height:40px;
 }
 .logo:hover {
   filter: drop-shadow(1px 1px 22px #e6ff8d);
+}
+
+
+table {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.tc1 {
+  background-color: rgb(52, 196, 254);
+}
+.tc2 {
+  background-color: rgb(219, 6, 0);
 }
