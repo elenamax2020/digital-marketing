@@ -60,7 +60,7 @@
     opacity: 0.7;
   }
   a.dropdown-toggle {
-    color:#fbf8f8 !important
+    color:white !important
   }
   a.dropdown-item:hover {
     color:#03727d !important
@@ -69,7 +69,7 @@
     color:#dfdfdf;
   }
   .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: rgb(123, 218, 255);
+    color: rgb(23, 40, 83);
 }
 .nav-link.active:hover
 {
@@ -147,7 +147,7 @@ footer{
 
   }*/
 
-.logof{
+.logof {
   width: 150px;
   margin-bottom: 30px;
   /*background-image: url("../img/nika2.png");*/
@@ -371,9 +371,12 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
+.container-fluid {
   border-radius: 5px;
   padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
 }
 
 .tc1 {
@@ -382,11 +385,50 @@ input[type=submit]:hover {
 .tc2 {
   background-color: rgb(219, 6, 0);
 }
-.tc3 {
+.tc3, .counter {
   background-color: #021e77;
 }
 
 .myimg {
   width: 100%;
   height: fit-content;
+}
+
+/*tools that we use*/
+.slick-slide {
+margin: 0 20px;
+}
+.slick-slide img {
+  width: 10%;
+  display: block;
+}
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+slick-initialized .slick-slide {
+  display: block;
+}
+.copy {
+  padding-top: 250px;
 }
