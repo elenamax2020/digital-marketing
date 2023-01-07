@@ -44,40 +44,45 @@
     background-image: url("../img/benefits-img2.jpg");
   }
   .header-bg7 {
-    background-image: url("../img/marketing2.png");
+    background-image
+    : url("../img/marketing2.png");
   }
+
   #mainNavigation a {
     font-family: 'Cabin', sans-serif;
-    font-size:14px;
+    font-size:1.2rem;
     text-transform:uppercase;
     letter-spacing:2px;
-   
-    text-shadow:1px 1px 2px rgba(0,0,0,0.4)
-  }
-   
+    text-shadow:1px 1px 2px rgba(4, 0, 44, 0.4)
+  } 
   .dropdown-menu {
-    background:#421fd0;
-    opacity: 0.7;
+    background:rgb(52, 196, 254);
+    opacity: 0.95;
   }
   a.dropdown-toggle {
-    color:white !important
+    color:#031f5a !important
+  }
+  a.dropdown-toggle:hover {
+    color:rgb(52, 196, 254) !important
+  }
+  a.dropdown-item {
+    color:#031f5a !important
   }
   a.dropdown-item:hover {
-    color:#03727d !important
+    color:#031f5a  !important
   }
   .nav-item a{
-    color:#dfdfdf;
+    color:#031f5a;
   }
   .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: rgb(23, 40, 83);
+    color: red;
 }
 .nav-link.active:hover
 {
-  color:rgb(232, 234, 238);
+  color:rgb(255, 95, 3);
 }
   .nav-item a:hover {
-    color:#fff;
-
+    color:rgb(52, 196, 254);
   }
   .nav-item{
     min-width:12vw;
@@ -88,19 +93,23 @@
     left:0;
     width:100%;
     z-index:123;
-    padding-bottom:120px;
+    padding-bottom:60px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
   background: -moz-linear-gradient(top,  rgb(52, 196, 254) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  rgb(52, 196, 254) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgb(52, 196, 254) 30%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom,  rgb(52, 196, 254) 40%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
   }
   #navbarNavDropdown.collapsing .navbar-nav,
   #navbarNavDropdown.show .navbar-nav{
-    background:#037582;
-    opacity: 0.9;
-    padding:12px;
+    background:rgb(52, 196, 254);
+    opacity: 0.95;
+    padding:10px;
   }
+  .navbar {
+    margin-top:-20px;
+  }
+
   .box{
     padding: 15px;        
     border: 4px solid #666;
@@ -153,7 +162,6 @@ footer{
   /*background-image: url("../img/nika2.png");*/
   background-size: cover;
 }
-
 
 .col h3, h5, h2 {
   width: fit-content;
@@ -259,6 +267,7 @@ form-button .fas{
     font-size: 26px;
     color: #ccc
 }
+
 .social-icons .fab, .fa{
     width: 40px;
     height:40px;
@@ -269,6 +278,10 @@ form-button .fas{
     cursor: pointer;
     margin-bottom: 20px;
     border-top-left-radius: 0;
+}
+.social-icons .fab:hover, .fa:hover{
+  filter: drop-shadow(1px 1px 2px navy);
+  transform: translate3d(-1px, -1px, -11px);
 }
 
 #socialh {
@@ -327,23 +340,24 @@ height:40px;
     height: 40px;
   }
 }
+
 /*adding to logo class from FX.css*/
 .logo {  
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -25px;
-  margin-top:25px;
+  margin-bottom: -35px;
+  margin-top:20px;
   max-width: 200px;
   min-width: 200px;
   width: 200px;
-  filter: drop-shadow(1px 1px 4px rgb(229, 191, 0));
+  filter: drop-shadow(1px 1px 2px rgb(151, 126, 0));
 }
 .logo:hover {
-  filter: drop-shadow(1px 1px 1px navy);
-  transform: translate3d(1px, 1px, 2px);
+  filter: drop-shadow(1px 1px 2px navy);
+  transform: translate3d(-1px, -1px, -11px);
 }
-
+/*End of modifications to logo class from FX.css*/
 
 table {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
@@ -372,7 +386,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container-fluid {
+.containers {
   border-radius: 5px;
   padding: 20px;
   padding-top: 50px;
