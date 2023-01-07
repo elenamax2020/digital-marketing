@@ -34,5 +34,5 @@ function animate(obj, initVal, lastVal, duration) {
  const load = () => {
     animate(text1, 0, 511, 7000);
     animate(text2, 0, 232, 7000);
-    animate(text3, 0, 99, 7000);
+    animate(text3, 0,15, 7000);
  }
