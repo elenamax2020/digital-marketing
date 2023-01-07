@@ -337,10 +337,11 @@ height:40px;
   max-width: 200px;
   min-width: 200px;
   width: 200px;
-  filter: drop-shadow(1px 1px 1px #e6ff8d);
+  filter: drop-shadow(1px 1px 4px rgb(229, 191, 0));
 }
 .logo:hover {
-  filter: drop-shadow(1px 1px 22px #e6ff8d);
+  filter: drop-shadow(1px 1px 1px navy);
+  transform: translate3d(1px, 1px, 2px);
 }
 
 
