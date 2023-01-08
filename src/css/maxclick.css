@@ -47,6 +47,10 @@
     background-image
     : url("../img/marketing2.png");
   }
+  .header-bg8 {
+    background-image
+    : url("../img/web.jpg");
+  }
 
   #mainNavigation a {
     font-family: 'Cabin', sans-serif;
