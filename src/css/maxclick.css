@@ -54,7 +54,7 @@
 
   #mainNavigation a {
     font-family: 'Cabin', sans-serif;
-    font-size:1.2rem;
+    font-size:1rem;
     text-transform:uppercase;
     letter-spacing:2px;
     text-shadow:1px 1px 2px rgba(4, 0, 44, 0.4)
@@ -73,11 +73,22 @@
     color:#031f5a !important
   }
   a.dropdown-item:hover {
-    color:#031f5a  !important
+    color:rgb(52, 196, 254)  !important;
+    background-color:#031f5a  !important;
   }
   .nav-item a{
     color:#031f5a;
   }
+  /*FX mobile nav button hover style*/
+  .navbar-toggler:hover, .navbar-toggler-icon:hover {
+    background-color:rgb(52, 196, 254)  !important;
+    color:#031f5a  !important;
+  }
+  /*FX (an indirect change a bootstrap property for new look in dropdown menu)*/
+  .nav-link{
+    display: grid;
+  }/*FX*/
+
   .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: red;
 }
@@ -86,7 +97,10 @@
   color:rgb(255, 95, 3);
 }
   .nav-item a:hover {
-    color:rgb(52, 196, 254);
+    border-radius: 20%;
+    padding: 15px;
+    color:rgb(52, 196, 254)  !important;
+    background-color:#031f5a  !important;
   }
   .nav-item{
     min-width:12vw;
@@ -97,7 +111,7 @@
     left:0;
     width:100%;
     z-index:123;
-    padding-bottom:60px;
+    padding-bottom:65px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
   background: -moz-linear-gradient(top,  rgb(52, 196, 254) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  rgb(52, 196, 254) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -111,7 +125,7 @@
     padding:10px;
   }
   .navbar {
-    margin-top:-20px;
+    margin-top:-10px;
   }
 
   .box{
@@ -273,15 +287,27 @@ form-button .fas{
 }
 
 .social-icons .fab, .fa{
-    width: 40px;
-    height:40px;
+    width: 35px;
+    height:35px;
     border-radius: 50%;
     text-align: center;
-    line-height: 2.3em;
+    line-height: 2.3rem;
     font-size: 1em;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     border-top-left-radius: 0;
+    background-color: #021e77;
+    color:rgb(52, 196, 254)
+}
+
+@media (max-width:450px){
+  .social-icons .fab, .fa{
+    width: 30px;
+    height: 30px;
+    line-height: -1rem;
+      /*changed the logo arrangement to verticle*/
+      display: grid;
+  }
 }
 .social-icons .fab:hover, .fa:hover{
   filter: drop-shadow(1px 1px 2px navy);
@@ -399,12 +425,21 @@ input[type=submit]:hover {
 }
 
 .tc1 {
+  color: rgb(52, 196, 254);
+}
+.bg-tc1 {
   background-color: rgb(52, 196, 254);
 }
-.tc2 {
+.tc2{
+  color: rgb(219, 6, 0);
+} 
+.bg-tc2 {
   background-color: rgb(219, 6, 0);
 }
-.tc3, .counter {
+.tc3 {
+  color: #021e77;
+} 
+.bg-tc3{
   background-color: #021e77;
 }
 
