@@ -124,7 +124,7 @@
     left:0;
     width:100%;
     z-index:123;
-    padding-bottom:65px;
+    padding-bottom:75px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
   background: -moz-linear-gradient(top,  rgb(52, 196, 254) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  rgb(52, 196, 254) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -136,9 +136,13 @@
     background:rgb(52, 196, 254);
     opacity: 0.95;
     padding:10px;
+    margin-top:50px;
   }
-  .navbar {
-    margin-top:-10px;
+
+  .my-2 {
+    top:0;
+    margin-top: 0rem!important;
+    padding:0px;
   }
 
   .box{
@@ -152,7 +156,7 @@
 /*footer css starts here under*/
 
 *{
-  margin: 0;
+  margin: 1;
   padding: 0;
   font-family: 'poppins', sans-serif;
   box-sizing: border-box;
@@ -300,6 +304,11 @@ form-button .fas{
     color: #ccc
 }
 
+/* the white border line in menu adjustment here under for both mobile and destkop*/
+.py-3, .my-2 {
+  height:0px;
+}
+
 .social-icons .fab, .far, .fas, .fa,.fa-brands{
     width: 35px;
     height:35px;
@@ -321,10 +330,31 @@ form-button .fas{
     width: 30px;
     height: 30px;
     line-height: -1rem;
+    margin-bottom: 0.7rem;
       /*changed the logo arrangement to verticle*/
       display: grid;
   }
+  
+  .logo {
+    padding-top: 33px;
+    width:300px;
+    min-width: 270px;
+  }
+/* white border on menu*/
+  .py-3 {
+    height:40px;
+  }
+
+  #mainNavigation {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:123;
+    padding-bottom:120px;
+  }
 }
+
 .social-icons .fab:hover, .fas:hover, .far:hover, .fa:hover{
   filter: drop-shadow(1px 1px 1px navy);
   transform: translate3d(-1px, -1px, -11px);
@@ -344,12 +374,17 @@ form-button .fas{
   position: absolute;
   right:0;
   top: 0;
+  margin-top: 1.5rem;
+  margin-right: 0.25rem;
 }
+
 
 #contacth {
   position: absolute;
   left:0;
   top: 0;
+  margin-top: 1.5rem;
+  margin-left: 0.25rem;
 }
 
 .plabel {
@@ -402,10 +437,11 @@ height:40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -35px;
+
   margin-top:20px;
+  /* removing restriction for @media less than 450px size adjustment
   max-width: 200px;
-  min-width: 200px;
+  min-width: 200px; */
   width: 200px;
   filter: drop-shadow(1px 1px 2px rgb(151, 126, 0));
 }
