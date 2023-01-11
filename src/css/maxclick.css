@@ -331,10 +331,11 @@ form-button .fas{
     height: 30px;
     line-height: -1rem;
     margin-bottom: 0.7rem;
-      /*changed the logo arrangement to verticle*/
-      display: grid;
   }
-  
+  #contacth, #socialh {
+        /*changed the logo arrangement to verticle*/
+        display: grid;
+      }
   .logo {
     padding-top: 33px;
   }
