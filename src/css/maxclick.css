@@ -509,4 +509,25 @@ input[type=submit]:hover {
   height: fit-content;
 }
 
-/*tools that we use*/
+/*particles JS*/
+
+#flex--bootstrap {
+  height:100vh
+  }
+  #block--svg {
+  fill:#694198;
+  z-index:2
+  }
+  svg{
+  max-width:100px
+  }
+  #particles {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  z-index:0
+   }
