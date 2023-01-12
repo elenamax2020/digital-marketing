@@ -290,7 +290,6 @@ form.foot input{
     color:#ccc;
     border: 0;
     outline: none;
-
 }
 form button{
     background: transparent;
@@ -304,6 +303,21 @@ form-button .fas{
     color: #ccc
 }
 
+/* footer newsletter format*/
+#newsletter input {
+  color:white;
+  background:linear-gradient(to right,rgba(100, 207, 249, 0.686), #00152d67);
+  border-color: navy;
+
+  height: 40px;
+  font-size: 1.3em;
+  text-align: left;
+}
+#newsletter input:hover {
+  background:linear-gradient(to top,rgba(100, 207, 249, 0.686), #00152d67);
+  border-color: navy;
+  border-radius: 10%;
+}
 /* the white border line in menu adjustment here under for both mobile and destkop*/
 .py-3, .my-2 {
   height:0px;
@@ -315,7 +329,7 @@ form-button .fas{
     border-radius: 50%;
     text-align: center;
     line-height: 2.3rem;
-    font-size: 1.2em;
+    font-size: 1.3em;
     cursor: pointer;
     margin-bottom: 2px;
     border-top-left-radius: 0;
@@ -323,35 +337,6 @@ form-button .fas{
     color: #021e77;
     background:linear-gradient(to right,rgba(100, 207, 249, 0.686), #00152d67);
     background-color:rgb(52, 196, 254);*/
-}
-
-@media (max-width:450px){
-  .social-icons .fab,.fas, .far, .fa{
-    width: 30px;
-    height: 30px;
-    line-height: -1rem;
-    margin-bottom: 0.7rem;
-  }
-  #contacth, #socialh {
-        /*changed the logo arrangement to verticle*/
-        display: grid;
-      }
-  .logo {
-    padding-top: 33px;
-  }
-/* white border on menu*/
-  .py-3 {
-    height:40px;
-  }
-
-  #mainNavigation {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:123;
-    padding-bottom:120px;
-  }
 }
 
 .social-icons .fab:hover, .fas:hover, .far:hover, .fa:hover{
@@ -409,7 +394,44 @@ height:40px;
 .pgbar {
   height: 40px;
 } 
+/* media query for */
+@media (width <= 450px){
+  .social-icons .fab,.fas, .far, .fa{
+    width: 30px;
+    height: 30px;
+    line-height: -1rem;
+    margin-bottom: 0.7rem;
+  }
+  #contacth, #socialh {
+        /*changed the logo arrangement to verticle
+        display: grid;
+        /*or to hide logos on small screen*/
+        display: none;
+      }
+  .logo {
+    padding-top: 33px;
+  }
 
+/* white border on menu*/
+  .py-3 {
+    height:40px;
+  }
+
+  #mainNavigation {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:123;
+    padding-bottom:120px;
+  }
+
+/* footer size correction on smaller displays upto 320px*/
+  #newsletter input, .logof, .underline {
+    max-width: 100%;
+  }
+}
+/* media query for medium sized and smaller screens*/
 @media (max-width: 770px) {
   .plabel {
     text-align: right;
