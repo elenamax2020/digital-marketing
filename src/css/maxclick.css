@@ -34,35 +34,34 @@
     background-color:#04AA6D;
   }
   .header-bg1 {
-    background-image: url("../img/digital.jpg");
+    background-image: linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/digital.jpg");
   }
   .header-bg2 {
-    background-image: url("../img/about-img.jpg");
+    background-image: linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/about-img.jpg");
   }
   .header-bg3 {
-    background-image: url("../img/page3img.jpg");
+    background-image: linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/page3img.jpg");
   }
 
   .header-bg4 {
-    background-image: url("../img/page3img2.jpg");
+    background-image: linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/page3img2.jpg");
   }
   .header-bg5 {
-    background-image: url("../img/benefits-img.jpg");
+    background-image: linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/benefits-img.jpg");
   }
   .header-bg6 {
-    background-image: url("../img/benefits-img2.jpg");
+    background-image: linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/benefits-img2.jpg");
   }
   .header-bg7 {
-    background-image
-    : url("../img/marketing2.png");
+    background-image: linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/marketing2.png");
   }
   .header-bg8 {
     background-image
-    : url("../img/web.jpg");
+    : linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/web.jpg");
   }
   .header-bg9 {
     background-image
-    : url("../img/web2.jpg");
+    : linear-gradient(rgba(0,0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/web2.jpg");
   }
 
   #mainNavigation a {
@@ -126,10 +125,11 @@
     z-index:123;
     padding-bottom:75px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-  background: -moz-linear-gradient(top,  rgb(52, 196, 254) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgb(52, 196, 254) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgb(52, 196, 254) 40%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top,  rgb(52, 196, 254) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgb(52, 196, 254) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgb(52, 196, 254) 40%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    /* height: 100px; */
   }
   #navbarNavDropdown.collapsing .navbar-nav,
   #navbarNavDropdown.show .navbar-nav{
@@ -308,8 +308,8 @@ form-button .fas{
   color:white;
   background:linear-gradient(to right,rgba(100, 207, 249, 0.686), #00152d67);
   border-color: navy;
-
-  height: 40px;
+  height: 35px;
+  max-width: 70%;
   font-size: 1.3em;
   text-align: left;
 }
@@ -324,51 +324,63 @@ form-button .fas{
 }
 
 .social-icons .fab, .far, .fas, .fa,.fa-brands{
-    width: 35px;
-    height:35px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 2.3rem;
-    font-size: 1.3em;
-    cursor: pointer;
-    margin-bottom: 2px;
-    border-top-left-radius: 0;
-    /*
-    color: #021e77;
-    background:linear-gradient(to right,rgba(100, 207, 249, 0.686), #00152d67);
-    background-color:rgb(52, 196, 254);*/
+  border-radius: 50%;
+  text-align: center;
+  margin:2px;
+  padding: 7px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  cursor: pointer;
+  font-size: 18px;
+  width:30px;
+  height:30px;
+  /*
+  background:linear-gradient(to right,rgba(100, 207, 249, 0.686), #00152d67);
+  color: #021e77;
+  line-height: 2.3rem;
+  margin-bottom: 2px;
+  background-color:rgb(52, 196, 254);
+  */
 }
 
 .social-icons .fab:hover, .fas:hover, .far:hover, .fa:hover{
   filter: drop-shadow(1px 1px 1px navy);
-  transform: translate3d(-1px, -1px, -11px);
-  /*
-  border-width: 0.1em;
+  opacity: 1;
+  transform: translate3d(1px, -1px, -1px);
+  border-width: 0.01em;
   border-color:navy;
-  border-style:groove;*/
+  border-style:groove;
+  background:linear-gradient(to right,rgba(100, 207, 249, 0.686), #00c5fb67);
 }
 
 .emboss-icon {
   color: #021e77;
+  /*
   background:linear-gradient(to right,rgba(100, 207, 249, 0.686), #00152d67);
-  font-size: 1em;
+  */
 }
 
 #socialh {
+  opacity: 0.7;
+  font-size: 1.3em;
   position: absolute;
   right:0;
   top: 0;
   margin-top: 1.5rem;
+  margin-bottom:1.5rem;
   margin-right: 0.25rem;
 }
 
 
 #contacth {
+  opacity: 0.7;
+  font-size: 1.3em;
   position: absolute;
   left:0;
   top: 0;
   margin-top: 1.5rem;
   margin-left: 0.25rem;
+  margin-bottom:1.5rem;
 }
 
 .plabel {
@@ -400,13 +412,13 @@ height:40px;
     width: 30px;
     height: 30px;
     line-height: -1rem;
-    margin-bottom: 0.7rem;
+    /*margin-bottom: 0.7rem;*/
   }
   #contacth, #socialh {
-        /*changed the logo arrangement to verticle
+        /*changed the logo arrangement to verticle*/
         display: grid;
-        /*or to hide logos on small screen*/
-        display: none;
+        /*or to hide logos on small screen
+        display: none;*/
       }
   .logo {
     padding-top: 33px;
@@ -426,10 +438,10 @@ height:40px;
     padding-bottom:120px;
   }
 
-/* footer size correction on smaller displays upto 320px*/
+/* footer size correction on smaller displays upto 320px
   #newsletter input, .logof, .underline {
     max-width: 100%;
-  }
+  }*/
 }
 /* media query for medium sized and smaller screens*/
 @media (max-width: 770px) {
